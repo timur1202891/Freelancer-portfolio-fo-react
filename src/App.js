@@ -1,6 +1,6 @@
 import "./styles/main.css"
 
-import { HashRouter as Router, Routes, Route, HashRouter } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar"
 import Footer from "./components/footer/Footer"
 import Home from "./pages/Home";
@@ -11,7 +11,7 @@ import Project from "./pages/Project";
 import ScrollToTop from "./utils/scrollToTop";
 
 function App() {
-  return (<HashRouter>
+  return (
     <div className="App">
       <Router>
         <ScrollToTop/>
@@ -25,7 +25,7 @@ function App() {
      <Footer/>
      </Router>
     </div>
-    </HashRouter>
+  
   );
 }
 
